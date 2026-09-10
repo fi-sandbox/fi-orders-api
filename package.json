@@ -1,0 +1,33 @@
+{
+  "name": "fi-orders-api",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Orders API — order processing service (Node.js/Express), high test coverage",
+  "license": "MIT",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "supertest": "^6.3.4",
+    "jest": "^29.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fi-sandbox/fi-orders-api.git"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "coverageReporters": [
+      "text-summary",
+      "lcov",
+      "json-summary"
+    ]
+  }
+}
